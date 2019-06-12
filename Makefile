@@ -127,7 +127,7 @@ OSSLINC = -I$(OPENSSLDIR)/include
 OSSLIBS = -L$(OPENSSLDIR)/lib -lcrypto
 
 CFLAGS := $(CFG_CFLAGS)
-CFLAGS += -I$(MOSQUITTO_SRC)/src/
+CFLAGS += -I$(MOSQUITTO_SRC)/include/
 CFLAGS += -I$(MOSQUITTO_SRC)/lib/
 ifneq ($(OS),Windows_NT)
 	CFLAGS += -fPIC -Wall -Werror
